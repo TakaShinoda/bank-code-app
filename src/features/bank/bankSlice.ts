@@ -9,12 +9,12 @@ type DATABANK = typeof dataBank
 
 type bankState = {
   bank: DATABANK
-  bankname: string
+  bankName: string
 }
 
 const initialState: bankState = {
   bank: dataBank,
-  bankname: '',
+  bankName: '',
 }
 
 export const fetchAsyncGetBankCode = createAsyncThunk(
@@ -40,7 +40,7 @@ const bankSlice = createSlice({
   },
 })
 
-export const selectBank = (state: RootState) => state.bank.data
+export const selectBank = (state: RootState) => state.bank.bank
 export const selectBankName = (state: RootState) => state.bank.bankName
 
 export default bankSlice.reducer
