@@ -1,9 +1,9 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
-//import bankReducer from '../features/bank/bankSlice'
+import bankReducer from '../features/bank/bankSlice'
 
 export const store = configureStore({
   reducer: {
-    // bank: bankReducer,
+    bank: bankReducer,
   },
 })
 
