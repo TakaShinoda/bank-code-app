@@ -1,11 +1,12 @@
 import React from 'react'
 import './App.css'
-import { Button } from 'semantic-ui-react'
+import { SelectBank } from './features/bank/SelectBank'
+
 
 function App() {
   return (
     <div className="App">
-        <Button primary>Primary</Button>
+      <SelectBank />
     </div>
   )
 }
