@@ -1,7 +1,10 @@
 import React, { FC } from 'react'
 import { Button } from 'semantic-ui-react'
+import { useDispatch } from 'react-redux'
+import { fetchAsyncGetBankCode } from './bankSlice'
 
 export const SelectBank: FC = () => {
+  const dispatch = useDispatch()
   const megaBank = [
     '三菱',
     'みずほ',
@@ -14,14 +17,10 @@ export const SelectBank: FC = () => {
   return (
     <div>
       {megaBank.map((bank, i) => (
-        <Button inverted color="blue" key={i}>
+        <Button inverted color="blue" key={i} onClick={() => dispatch(fetchAsyncGetBankCode(bank))}>
           {bank}
         </Button>
       ))}
-
-      {/* <Button inverted color='blue'>
-        Blue
-      </Button> */}
     </div>
   )
 }
