@@ -1,9 +1,13 @@
 [
   {
-    "code": "0009",
-    "name": "三井住友",
-    "nameHalfKana": "ﾐﾂｲｽﾐﾄﾓ",
-    "nameFullKana": "ミツイスミトモ",
-    "nameFullHira": "みついすみとも"
+    "code": "9900",
+    "kana": "ユウチヨ",
+    "name": "ゆうちょ",
+    "roma": "yuuchiyo",
+    "hira": "ゆうちよ",
+    "created_at": "2020-09-30T17:26:49.000Z",
+    "updated_at": "2020-09-30T17:26:49.000Z",
+    "url": "https://bank.teraren.com/banks/9900.json",
+    "branches_url": "https://bank.teraren.com/banks/9900/branches.json"
   }
 ]

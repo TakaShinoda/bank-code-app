@@ -3,7 +3,7 @@ import axios from 'axios'
 import { RootState } from '../../app/store'
 import dataBank from './apiDataBank.json'
 
-const apiUrl = 'https://bankcode-api.appspot.com/api/bank'
+const apiUrl = 'https://bank.teraren.com/banks/search.json?kana='
 
 type DATABANK = typeof dataBank
 
@@ -20,7 +20,7 @@ const initialState: bankState = {
 export const fetchAsyncGetBankCode = createAsyncThunk(
   'bank/getBankCode',
   async (bankName: string) => {
-    const { data } = await axios.get<DATABANK>(`${apiUrl}/JP?name=${bankName}`)
+    const { data } = await axios.get<DATABANK>(`${apiUrl}/${bankName}`)
     return { data: data, bankName: bankName }
   }
 )
