@@ -14,7 +14,7 @@ type bankState = {
 
 const initialState: bankState = {
   bank: dataBank,
-  bankName: '',
+  bankName: 'ゆうちょ',
 }
 
 export const fetchAsyncGetBankCode = createAsyncThunk(
@@ -33,7 +33,7 @@ const bankSlice = createSlice({
     builder.addCase(fetchAsyncGetBankCode.fulfilled, (state, action) => {
       return {
         ...state,
-        data: action.payload.data,
+        bank: action.payload.data,
         bankName: action.payload.bankName,
       }
     })
