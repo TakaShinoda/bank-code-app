@@ -15,7 +15,7 @@ export const Cards: FC = () => {
           <Card.Content extra>
             <div className="ui two buttons">
               <Button inverted color="blue">
-              {bank[0].code}
+                {bank[0].code}
               </Button>
             </div>
           </Card.Content>

@@ -6,11 +6,11 @@ import { fetchAsyncGetBankCode } from './bankSlice'
 export const SelectBank: FC = () => {
   const dispatch = useDispatch()
   const megaBank = [
-    // '三菱',
-    // 'みずほ',
-    // '三井住友',
-    // 'りそな',
-    // '新生',
+    '三菱',
+    'みずほ',
+    '三井住友',
+    'りそな',
+    '新生',
     'あおぞら',
     'ゆうちょ',
   ]

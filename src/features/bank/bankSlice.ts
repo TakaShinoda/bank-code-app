@@ -3,7 +3,7 @@ import axios from 'axios'
 import { RootState } from '../../app/store'
 import dataBank from './apiDataBank.json'
 
-const apiUrl = 'https://bank.teraren.com/banks/search.json?kana='
+const apiUrl = 'https://bank.teraren.com/banks/search.json?name='
 
 type DATABANK = typeof dataBank
 
