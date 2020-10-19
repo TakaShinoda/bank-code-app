@@ -20,7 +20,7 @@ const initialState: bankState = {
 export const fetchAsyncGetBankCode = createAsyncThunk(
   'bank/getBankCode',
   async (bankName: string) => {
-    const { data } = await axios.get<DATABANK>(`${apiUrl}/${bankName}`)
+    const { data } = await axios.get<DATABANK>(`${apiUrl}${bankName}`)
     return { data: data, bankName: bankName }
   }
 )
