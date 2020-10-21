@@ -10,7 +10,7 @@ export const Cards: FC = () => {
       <Card.Group>
         <Card>
           <Card.Content>
-            <Card.Header>{bank[0].hira}</Card.Header>
+            <Card.Header>{bank[0].name}</Card.Header>
           </Card.Content>
           <Card.Content extra>
             <div className="ui two buttons">
