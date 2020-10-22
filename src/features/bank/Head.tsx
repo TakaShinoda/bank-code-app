@@ -5,8 +5,8 @@ export const Head: FC = () => {
   return (
     <div>
       <Header as="h2">
-        <Icon name="plug" />
-        <Header.Content>Uptime Guarantee</Header.Content>
+        <Icon name="money" />
+        <Header.Content>金融機関コード</Header.Content>
       </Header>
     </div>
   )
